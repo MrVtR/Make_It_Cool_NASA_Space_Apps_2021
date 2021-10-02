@@ -21,13 +21,16 @@
       align-items: center;
       margin: 0;
       padding: 16px 13px;
-      li {
-        font-family: Roboto;
-        font-weight: 500;
-        color: #000000;
+      .link {
+        text-decoration: none;
+        li {
+          color: black;
+          font-family: Roboto;
+          font-weight: 500;
+        }
       }
     }
-    .menu-list li:not(:last-child) {
+    .menu-list :not(:last-child) {
       padding-right: 60px;
     }
   }
