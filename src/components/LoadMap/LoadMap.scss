@@ -1,0 +1,17 @@
+.Map {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .nav-control,
+  .geolocate-control {
+    margin: 10px 0 0 10px;
+  }
+  .scale-control {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
