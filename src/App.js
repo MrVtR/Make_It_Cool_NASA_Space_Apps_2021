@@ -1,7 +1,11 @@
-import LoadMap from './components/LoadMap/LoadMap';
+import { Home } from './Pages/exportPages';
 
 function App() {
-  return <LoadMap />;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
