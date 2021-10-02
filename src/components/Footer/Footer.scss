@@ -1,0 +1,33 @@
+.gradient-container {
+  background: linear-gradient(
+    102.67deg,
+    rgba(255, 11, 37, 0.4788) 0.43%,
+    rgba(62, 125, 166, 0.7524) 100%
+  );
+  width: 100vw;
+  padding: 74px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title,
+    .subtitle {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 32px;
+      color: white;
+    }
+    .title {
+      font-size: 37px;
+    }
+    .subtitle {
+      font-size: 27px;
+    }
+  }
+}
