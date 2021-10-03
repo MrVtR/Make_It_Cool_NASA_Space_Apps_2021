@@ -10,6 +10,10 @@ function Game() {
   return (
     <>
       <Nav />
+      <div className="gradient-container">
+        <p className="title">Have fun with our game!</p>
+        <p className="subtitle">Visualize the impacts on your city</p>
+      </div>
       <div className="data-container">
         <div className="game"></div>
         <div className="container">

@@ -1,0 +1,116 @@
+.data-container {
+  margin: 106px 368px 76px 368px;
+}
+.game {
+  background: red;
+  width: 1245px;
+  height: 700px;
+}
+.container {
+  ::-webkit-scrollbar {
+    width: 20px;
+    height: 13px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #b3afb3;
+    border-radius: 9px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b3afb3;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 9px;
+    box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+  }
+  .posts {
+    width: 1300px;
+    height: 1300px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+    margin-bottom: 131px;
+    padding: 75px 0 0 80px;
+    border: 2px solid black;
+
+    .posts-image {
+      width: 330px;
+      height: 330px;
+      margin: 0 75px 80px 0;
+      background-color: red;
+    }
+  }
+}
+.command {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 40px;
+  }
+}
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 134px;
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 615px;
+    .image {
+      width: 307px;
+      height: 301px;
+      background-color: #c4c4c4;
+    }
+  }
+
+  .text-container {
+    width: 615px;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 14px;
+    .title {
+      font-family: Roboto;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 85px;
+      margin: 0;
+    }
+    .subtitle {
+      font-size: 30px;
+      text-align: end;
+      margin: 0;
+    }
+  }
+}
+.text,
+.final-text {
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 27px 0 0 0;
+  text-align: justify;
+}
+.final-text {
+  width: 1245px;
+  margin-bottom: 99px;
+}
+.section {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 72px;
+  text-align: right;
+}
