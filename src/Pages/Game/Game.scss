@@ -1,0 +1,65 @@
+.data-container {
+  margin: 106px 368px 76px 368px;
+}
+.game {
+  background: red;
+  width: 1245px;
+  height: 700px;
+}
+.command {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 40px;
+  }
+}
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 134px;
+  .image {
+    width: 615px;
+    height: 588px;
+    background-color: #c4c4c4;
+  }
+  .text-container {
+    width: 615px;
+    margin-left: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 14px;
+    .title {
+      font-family: Roboto;
+      font-size: 72px;
+      font-weight: 700;
+      line-height: 85px;
+      margin: 0;
+    }
+    .subtitle {
+      font-size: 30px;
+      text-align: end;
+      margin: 0;
+    }
+  }
+}
+.text,
+.final-text {
+  font-family: Roboto;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 27px 0 0 0;
+  text-align: justify;
+}
+.final-text {
+  width: 1245px;
+  margin-bottom: 99px;
+}

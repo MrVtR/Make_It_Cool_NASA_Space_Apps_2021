@@ -8,8 +8,8 @@ mapboxgl.accessToken =
 export default function App() {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(-70.9);
-  const [lat, setLat] = useState(42.35);
+  const [lng, setLng] = useState(0);
+  const [lat, setLat] = useState(45);
   const [zoom, setZoom] = useState(1);
 
   useEffect(() => {
@@ -185,7 +185,7 @@ export default function App() {
             map.current
               .getSource('disasters')
               .setData(
-                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=5000&status=all&start=1990-06-04&end=2021-10-02&category=wildfires',
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&category=wildfires',
               );
           }}
         >
@@ -196,7 +196,7 @@ export default function App() {
             map.current
               .getSource('disasters')
               .setData(
-                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=50&status=all&start=1990-06-04&end=2021-10-02&category=waterCOlor',
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&category=waterCOlor',
               );
           }}
         >
@@ -207,7 +207,7 @@ export default function App() {
             map.current
               .getSource('disasters')
               .setData(
-                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=50&status=all&start=1990-06-04&end=2021-10-02&category=tempExtremes',
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&category=tempExtremes',
               );
           }}
         >
@@ -218,7 +218,51 @@ export default function App() {
             map.current
               .getSource('disasters')
               .setData(
-                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=50&status=all&start=1990-06-04&end=2021-10-02&category=floods',
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&category=dustHaze',
+              );
+          }}
+        >
+          Dust and Haze
+        </button>
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&category=drought',
+              );
+          }}
+        >
+          Drought
+        </button>
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&category=manmade',
+              );
+          }}
+        >
+          Man Made
+        </button>
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&limit=1000&category=severeStorms',
+              );
+          }}
+        >
+          Severe Storms
+        </button>
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&category=floods',
               );
           }}
         >
