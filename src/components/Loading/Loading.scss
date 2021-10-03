@@ -1,0 +1,17 @@
+.loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: fadeIn 1s infinite alternate;
+  .logo {
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 20%;
+    }
+  }
+}

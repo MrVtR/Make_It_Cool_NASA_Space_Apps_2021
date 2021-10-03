@@ -4,7 +4,10 @@ function Map() {
   return (
     <>
       <Nav />
-      <h1>Map</h1>
+      <div className="gradient-container">
+        <p className="title">Global Warming View</p>
+        <p className="subtitle">Visualize the impacts on your city</p>
+      </div>
       <LoadMap />
       <Footer />
     </>

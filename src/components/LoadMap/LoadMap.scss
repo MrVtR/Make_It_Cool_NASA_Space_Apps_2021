@@ -1,17 +1,19 @@
-.Map {
-  width: 100vw;
-  height: 100vh;
+.map {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  .map-container {
+    width: 1000px;
+    height: 546px;
+  }
   .nav-control,
   .geolocate-control {
     margin: 10px 0 0 10px;
   }
-  .scale-control {
-    display: flex;
-    height: 100%;
-    align-items: flex-end;
-    justify-content: center;
-  }
+}
+.mapboxgl-ctrl-scale {
+  position: absolute;
+  margin-left: 100px !important;
 }
