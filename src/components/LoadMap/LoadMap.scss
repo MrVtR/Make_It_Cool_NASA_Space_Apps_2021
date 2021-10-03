@@ -4,11 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   .buttons {
-    width: 100%;
+    width: 600px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     margin: 20px 0;
@@ -20,6 +21,7 @@
       font-family: Roboto;
       font-style: normal;
       font-weight: 500;
+      margin: 0 10px 10px 0;
     }
     button:hover {
       background-color: gray;

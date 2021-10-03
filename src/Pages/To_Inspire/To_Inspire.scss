@@ -55,7 +55,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 134px;
+  margin-top: 40px;
+  margin-bottom: 20px;
   .image-container {
     display: flex;
     flex-direction: row;
@@ -78,13 +79,13 @@
     margin-right: 14px;
     .title {
       font-family: Roboto;
-      font-size: 72px;
+      font-size: 40px;
       font-weight: 700;
       line-height: 85px;
       margin: 0;
     }
     .subtitle {
-      font-size: 30px;
+      font-size: 28px;
       text-align: end;
       margin: 0;
     }
@@ -93,7 +94,7 @@
 .text,
 .final-text {
   font-family: Roboto;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 40px;
   margin: 27px 0 0 0;
