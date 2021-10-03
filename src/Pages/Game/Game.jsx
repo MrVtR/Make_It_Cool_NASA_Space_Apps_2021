@@ -10,6 +10,7 @@ import Transport from '../../assets/images/vehicle.svg';
 import Vote from '../../assets/images/Vote.svg';
 import Food from '../../assets/images/Food.svg';
 import FoodGreen from '../../assets/images/foodGreen.png';
+import Iframe from 'react-iframe';
 function Game() {
   return (
     <>
@@ -19,7 +20,17 @@ function Game() {
         <p className="subtitle">Visualize the impacts on your city</p>
       </div>
       <div className="data-container">
-        <div className="game"></div>
+        <div className="game">
+          <Iframe
+            url="https://make-it-cool-game-nasa-space-apps-2021.netlify.app"
+            width="100%"
+            height="100%"
+            id="myId"
+            className="myClassname"
+            display="initial"
+            position="relative"
+          />
+        </div>
         <div className="container">
           <div className="home-container">
             <div

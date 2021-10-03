@@ -49,6 +49,7 @@ function Home() {
           be the solution to this problem.
         </p>
       </div>
+
       <div
         className="home-container"
         style={{ alignItems: 'flex-start', marginBottom: '125px' }}
@@ -82,35 +83,33 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="home-container">
-        <div className="image"></div>
-        <div className="text-container">
-          <h1 className="title">Current Global Warming Situation</h1>
-          <p className="text">
-            Global warming is the process of changing the global average
-            temperature of the atmosphere and oceans where the accumulation of
-            high concentrations of greenhouse gases in the atmosphere blocks the
-            heat emitted by the Sun and traps it on the Earth's surface,
-            increasing the Earth's average temperature.
-          </p>
+      <div className="container">
+        <h1 className="title">How to combat global warming?</h1>
+        <h2 className="subtitle">
+          Learn how together we can change the world!
+        </h2>
+        <div className="home-container" style={{ alignItems: 'flex-end' }}>
+          <div
+            className="text-container"
+            style={{ alignItems: 'flex-end', justifyContent: 'flex-end' }}
+          >
+            <p className="text">
+              In our mobile app, we will provide alerts of future heat-stressed
+              environments to make you prepared and informed.
+            </p>
+            <p className="text">
+              Also, after informing us of your location through your account
+              registration, you will have access to a chat with people living in
+              the same area. This chat will serve for alerts of other impacts by
+              message, such as forest fire warnings.
+            </p>
+          </div>
+          <div className="image"></div>
         </div>
-      </div>
-      <div
-        className="home-container"
-        style={{ alignItems: 'flex-start', marginBottom: '125px' }}
-      >
-        <div className="text-container">
-          <h1 className="title">What can we do?</h1>
-          <p className="text">
-            The use of renewable and reusable resources, reforestation,
-            reduction in waste disposal, use of sustainable transports,
-            recycling and the conscientious consumption of water, food and
-            products are just some of the things we can do to reduce global
-            warming. Together we can still learn many other attitudes we can
-            take to change the destiny of our planet!
-          </p>
-        </div>
-        <div className="image"></div>
+        <p className="final-text" style={{ margin: '20px 0 0 0' }}>
+          Feel free to check out our world map impact visualization area and
+          other sections that contain text to inform you about these issues.
+        </p>
       </div>
       <Footer />
     </div>
