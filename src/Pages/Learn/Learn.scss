@@ -5,7 +5,24 @@
     rgba(62, 125, 166, 0.7524) 100%
   );
   width: 100vw;
-  margin: 0;
+  padding: 20px 0 20px 0;
+  .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 84px;
+    color: white;
+  }
+  .subtitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: white;
+  }
 }
 .text-container {
   display: flex;
