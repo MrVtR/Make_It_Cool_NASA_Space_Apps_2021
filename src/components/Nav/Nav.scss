@@ -14,6 +14,7 @@
   .menu {
     background-color: #c4c4c4;
     margin-left: 58px;
+    border-radius: 10px;
     .menu-list {
       list-style-type: none;
       display: flex;
@@ -23,10 +24,15 @@
       padding: 16px 13px;
       .link {
         text-decoration: none;
+        height: 100%;
         li {
           color: black;
           font-family: Roboto;
           font-weight: 500;
+          height: 100%;
+        }
+        li:hover {
+          background-color: #404040;
         }
       }
     }

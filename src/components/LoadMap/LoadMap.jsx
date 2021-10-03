@@ -50,16 +50,16 @@ export default function App() {
           showUserHeading: true,
         }),
       );
-      map.current.addSource('earthquakes', {
+      map.current.addSource('disasters', {
         type: 'geojson',
-        data: 'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?status=all&start=1990-06-04&end=2021-10-02&category=wildfires',
+        data: null,
       });
 
       map.current.addLayer(
         {
-          id: 'earthquakes-heat',
+          id: 'disasters-heat',
           type: 'heatmap',
-          source: 'earthquakes',
+          source: 'disasters',
           maxzoom: 9,
           paint: {
             // Increase the heatmap weight based on frequency and property magnitude
@@ -93,15 +93,15 @@ export default function App() {
               0,
               'rgba(33,102,172,0)',
               0.2,
-              'rgb(103,169,207)',
+              'rgb(202,255,212)',
               0.4,
-              'rgb(209,229,240)',
+              'rgb(0,100,0)',
               0.6,
-              'rgb(253,219,199)',
+              'rgb(238,238,0)',
               0.8,
-              'rgb(239,138,98)',
+              'rgb(255,255,0)',
               1,
-              'rgb(178,24,43)',
+              'rgb(139,37,0)',
             ],
             // Adjust the heatmap radius by zoom level
             'heatmap-radius': [
@@ -130,9 +130,9 @@ export default function App() {
 
       map.current.addLayer(
         {
-          id: 'earthquakes-point',
+          id: 'disasters-point',
           type: 'circle',
-          source: 'earthquakes',
+          source: 'disasters',
           minzoom: 7,
           paint: {
             // Size circle radius by earthquake magnitude and zoom level
@@ -153,15 +153,15 @@ export default function App() {
               1,
               'rgba(33,102,172,0)',
               2,
-              'rgb(103,169,207)',
+              'rgb(202,255,212)',
               3,
-              'rgb(209,229,240)',
+              'rgb(0,100,0)',
               4,
-              'rgb(253,219,199)',
+              'rgb(238,238,0)',
               5,
-              'rgb(239,138,98)',
+              'rgb(255,255,0)',
               6,
-              'rgb(178,24,43)',
+              'rgb(139,37,0)',
             ],
             'circle-stroke-color': 'white',
             'circle-stroke-width': 1,
@@ -174,13 +174,71 @@ export default function App() {
     });
   });
 
-  console.log(document.querySelector('.map-container'));
   return (
     <div className="map">
-      <div className="sidebar">
+      <h1 className="warning">
+        Click in one button below and wait a moment to check the map filters
+      </h1>
+      <div className="buttons">
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=5000&status=all&start=1990-06-04&end=2021-10-02&category=wildfires',
+              );
+          }}
+        >
+          Wildfires
+        </button>
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=50&status=all&start=1990-06-04&end=2021-10-02&category=waterCOlor',
+              );
+          }}
+        >
+          Water Color
+        </button>
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=50&status=all&start=1990-06-04&end=2021-10-02&category=tempExtremes',
+              );
+          }}
+        >
+          Temperature Extremes
+        </button>
+        <button
+          onClick={() => {
+            map.current
+              .getSource('disasters')
+              .setData(
+                'https://eonet.sci.gsfc.nasa.gov/api/v3/events/geojson?limit=50&status=all&start=1990-06-04&end=2021-10-02&category=floods',
+              );
+          }}
+        >
+          Floods
+        </button>
+        <button
+          onClick={() => {
+            map.current.getSource('disasters').setData({
+              type: 'FeatureCollection',
+              features: [],
+            });
+          }}
+        >
+          Clear Filter
+        </button>
+      </div>
+      <div className="bar">
         Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
       </div>
-      <div ref={mapContainer} className="map-container" />
+      <div ref={mapContainer} className="map-container"></div>
     </div>
   );
 }

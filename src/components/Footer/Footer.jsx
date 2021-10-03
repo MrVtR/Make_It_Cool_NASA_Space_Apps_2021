@@ -6,7 +6,7 @@ import Email from '../../assets/images/Email.svg';
 import { Link } from 'react-router-dom';
 function Footer() {
   return (
-    <div className="gradient-container">
+    <div className="footer">
       <div className="social-media">
         <div className="icon-text">
           <img src={Github} alt="Github Logo" />
