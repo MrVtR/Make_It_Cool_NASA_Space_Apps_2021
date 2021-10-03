@@ -31,22 +31,58 @@ function Footer() {
       <div className="sitemap">
         <h1>Sitemap:</h1>
         <ul className="footer-list">
-          <Link to={{ pathname: '/' }} className="link">
+          <Link
+            to={{ pathname: '/' }}
+            className="link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             <li>Home</li>
           </Link>
-          <Link to={{ pathname: '/about-us' }} className="link">
+          <Link
+            to={{ pathname: '/about-us' }}
+            className="link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             <li>About us</li>
           </Link>
-          <Link to={{ pathname: '/map' }} className="link">
+          <Link
+            to={{ pathname: '/map' }}
+            className="link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             <li>Map</li>
           </Link>
-          <Link to={{ pathname: '/learn' }} className="link">
+          <Link
+            to={{ pathname: '/learn' }}
+            className="link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             <li>Learn</li>
           </Link>
-          <Link to={{ pathname: '/game' }} className="link">
+          <Link
+            to={{ pathname: '/game' }}
+            className="link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             <li>Game</li>
           </Link>
-          <Link to={{ pathname: '/to-inspire' }} className="link">
+          <Link
+            to={{ pathname: '/to-inspire' }}
+            className="link"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
             <li>To inspire</li>
           </Link>
         </ul>
