@@ -44,7 +44,7 @@ function AboutUs() {
         </div>
       </div>
       <div className="container">
-        <div className="home-container">
+        <div className="about-container">
           <div className="text-container">
             <h1 className="title">Our History</h1>
             <h2 className="subtitle">How do we get started?</h2>
@@ -63,9 +63,12 @@ function AboutUs() {
         </p>
       </div>
       <div className="container">
-        <div className="home-container">
+        <div className="about-container">
           <div className="image"></div>
-          <div className="text-container">
+          <div
+            className="text-container"
+            style={{ alignItems: 'flex-start', justifyContent: 'flex-start' }}
+          >
             <h1 className="title">Our Projects</h1>
             <h2 className="subtitle">How can we change the world?</h2>
             <p className="text">
@@ -82,7 +85,7 @@ function AboutUs() {
         </p>
       </div>
       <div className="container">
-        <div className="home-container">
+        <div className="about-container">
           <div className="text-container">
             <h1 className="title">Our Goals</h1>
             <h2 className="subtitle">How do we get started?</h2>

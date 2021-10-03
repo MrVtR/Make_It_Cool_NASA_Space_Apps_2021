@@ -15,7 +15,7 @@
   justify-content: center;
   .title {
     font-family: Roboto;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 500;
     margin: 83px 0 50px 0;
   }
@@ -39,16 +39,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .final-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
-.home-container {
+.about-container {
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: center;
-  margin-top: 134px;
+  margin-top: 40px;
   .image {
     width: 615px;
-    height: 588px;
+    height: 300px;
     background-color: #c4c4c4;
   }
   .text-container {
@@ -61,33 +65,33 @@
     margin-right: 14px;
     .title {
       font-family: Roboto;
-      font-size: 72px;
+      font-size: 40px;
       font-weight: 700;
       line-height: 85px;
       margin: 0;
     }
     .subtitle {
       font-family: Roboto;
-      font-size: 48px;
+      font-size: 28px;
       font-weight: 300;
       line-height: 85px;
       margin: 0;
+    }
+    p {
+      font-size: 24px;
     }
   }
 }
 .text,
 .final-text {
   font-family: Roboto;
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 40px;
   margin: 27px 0 0 0;
   text-align: justify;
 }
-.final-text {
-  width: 1245px;
-  margin-bottom: 99px;
-}
+
 .text-image {
   display: flex;
   align-items: center;
