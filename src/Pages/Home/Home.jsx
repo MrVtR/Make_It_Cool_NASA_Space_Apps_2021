@@ -10,10 +10,10 @@ import pic3 from '../../assets/images/Study.svg';
 import pic4 from '../../assets/test/30.png';
 function Home() {
   const items = [
-    { id: 1, source: <img src={pic1} alt="pic1" height="700px" /> },
-    { id: 2, source: <img src={pic2} alt="pic2" height="700px" /> },
-    { id: 3, source: <img src={pic3} alt="pic3" height="700px" /> },
-    { id: 4, source: <img src={pic4} alt="pic4" height="700px" /> },
+    { id: 1, source: <img src={pic1} alt="pic1" height="500px" /> },
+    { id: 2, source: <img src={pic2} alt="pic2" height="500px" /> },
+    { id: 3, source: <img src={pic3} alt="pic3" height="500px" /> },
+    { id: 4, source: <img src={pic4} alt="pic4" height="500px" /> },
   ];
   return (
     <div className="home">
@@ -50,11 +50,8 @@ function Home() {
         </p>
       </div>
 
-      <div
-        className="home-container"
-        style={{ alignItems: 'flex-start', marginBottom: '125px' }}
-      >
-        <div className="text-container">
+      <div className="home-container">
+        <div className="text-container" style={{ alignItems: 'flex-end' }}>
           <h1 className="title">What can we do?</h1>
           <p className="text">
             The use of renewable and reusable resources, reforestation,
@@ -67,7 +64,7 @@ function Home() {
         </div>
         <div className="image"></div>
       </div>
-      <div className="grandient-container" style={{ height: '640px' }}>
+      <div className="grandient-container" style={{ height: '440px' }}>
         <h1 className="title">How to combat global warming?</h1>
         <h2 className="subtitle">
           Learn how together we can change the world!
@@ -84,15 +81,13 @@ function Home() {
         </div>
       </div>
       <div className="container">
-        <h1 className="title">How to combat global warming?</h1>
+        <h1 className="title">Make it Cool App</h1>
         <h2 className="subtitle">
-          Learn how together we can change the world!
+          Check out the beta of our application, soon to be available for
+          download!
         </h2>
-        <div className="home-container" style={{ alignItems: 'flex-end' }}>
-          <div
-            className="text-container"
-            style={{ alignItems: 'flex-end', justifyContent: 'flex-end' }}
-          >
+        <div className="home-container">
+          <div className="text-container">
             <p className="text">
               In our mobile app, we will provide alerts of future heat-stressed
               environments to make you prepared and informed.
@@ -106,7 +101,7 @@ function Home() {
           </div>
           <div className="image"></div>
         </div>
-        <p className="final-text" style={{ margin: '20px 0 0 0' }}>
+        <p className="final-text">
           Feel free to check out our world map impact visualization area and
           other sections that contain text to inform you about these issues.
         </p>
