@@ -8,18 +8,33 @@ function Footer() {
   return (
     <div className="footer">
       <div className="social-media">
-        <div className="icon-text">
-          <img src={Github} alt="Github Logo" />
-          <p>Github</p>
-        </div>
+        <a
+          href="https://github.com/MrVtR/Make_It_Cool_NASA_Space_Apps_2021"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <div className="icon-text">
+            <img src={Github} alt="Github Logo" />
+            <p>Github</p>
+          </div>
+        </a>
+
         <div className="icon-text">
           <img src={Instagram} alt="Instagram Logo" />
           <p>Instagram</p>
         </div>
-        <div className="icon-text">
-          <img src={Email} alt="Email Logo" />
-          <p>Contact Us</p>
-        </div>
+        <a
+          href="https://2021.spaceappschallenge.org/challenges/statements/warning-things-are-heating-up/teams/make-it-cool/project"
+          target="_blank"
+          rel="noreferrer"
+          style={{ textDecoration: 'none' }}
+        >
+          <div className="icon-text">
+            <img src={Email} alt="Email Logo" />
+            <p>Contact Us</p>
+          </div>
+        </a>
       </div>
       <div className="copyright">
         <img src={Logo} alt="Logo" />

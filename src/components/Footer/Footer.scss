@@ -5,10 +5,10 @@
     rgba(255, 11, 37, 0.63) 100%
   );
   width: 100%;
-  padding: 74px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-evenly;
   .social-media {
     display: flex;
@@ -28,7 +28,7 @@
         font-family: Roboto;
         font-style: 300;
         font-weight: 300;
-        font-size: 30px;
+        font-size: 24px;
         line-height: 35px;
         color: white;
       }
@@ -49,11 +49,11 @@
       margin: 0;
     }
     .title {
-      font-size: 37px;
+      font-size: 30px;
       margin-bottom: 18px;
     }
     .subtitle {
-      font-size: 27px;
+      font-size: 20px;
     }
   }
   .sitemap {
@@ -62,7 +62,7 @@
       font-family: Roboto;
       font-style: normal;
       font-weight: 700;
-      font-size: 32px;
+      font-size: 26px;
       line-height: 37px;
     }
     .footer-list {
@@ -74,7 +74,7 @@
           color: white;
           font-family: Roboto;
           font-weight: 300;
-          font-size: 30px;
+          font-size: 24px;
           line-height: 35px;
         }
       }
