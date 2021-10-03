@@ -6,6 +6,10 @@ import Pipe from '../../assets/images/pipe.svg';
 import Meat from '../../assets/images/meat.svg';
 import Recycle from '../../assets/images/recycle.svg';
 import Buy from '../../assets/images/Buy.svg';
+import Transport from '../../assets/images/vehicle.svg';
+import Vote from '../../assets/images/Vote.svg';
+import Food from '../../assets/images/Food.svg';
+import FoodGreen from '../../assets/images/foodGreen.png';
 function Game() {
   return (
     <>
@@ -81,7 +85,7 @@ function Game() {
                 shipping continue to rise [1].
               </p>
             </div>
-            <div className="image"></div>
+            <img src={Transport} alt="vehicles" />
           </div>
           <p className="final-text" style={{ margin: '20px 0 0 0' }}>
             Per passenger, a domestic flight emits 133 grams of carbon dioxide
@@ -95,7 +99,7 @@ function Game() {
         </div>
         <div className="container">
           <div className="home-container" style={{ alignItems: 'center' }}>
-            <div className="image"></div>
+            <img src={Vote} alt="Vote" />
             <div className="text-container">
               <h1 className="title">Conscious vote</h1>
               <p className="text">
@@ -127,7 +131,7 @@ function Game() {
             <img src={Meat} alt="Meat_image" />
           </div>
           <div className="home-container" style={{ alignItems: 'center' }}>
-            <div className="image"></div>
+            <img src={Food} alt="Food" />
             <div className="text-container">
               <p className="text">
                 Plant-based foods are more environmentally friendly, as there is
@@ -149,7 +153,7 @@ function Game() {
                 warming [3].
               </p>
             </div>
-            <div className="image"></div>
+            <img src={FoodGreen} alt="FoodGreen" />
           </div>
         </div>
         <div className="container">

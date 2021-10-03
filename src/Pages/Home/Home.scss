@@ -8,6 +8,11 @@
     );
     width: 100vw;
   }
+  .carroussel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .grandient-container {
     display: flex;
     flex-direction: column;

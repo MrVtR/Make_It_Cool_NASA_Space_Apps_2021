@@ -32,9 +32,17 @@ function To_Inspire() {
               order to change the future of our planet. Together we can change
               the world!
             </p>
-            <p className="text">
-              Cook an organic recipe Recycle the trash of your neighbourhood
-              Share your bike riding to work Make yourself a new patchwork cloth
+            <p className="text" style={{ width: '100%', textAlign: 'left' }}>
+              - Cook an organic recipe
+            </p>
+            <p className="text" style={{ width: '100%', textAlign: 'left' }}>
+              - Recycle the trash of your neighbourhood
+            </p>
+            <p className="text" style={{ width: '100%', textAlign: 'left' }}>
+              - Share your bike riding to work
+            </p>
+            <p className="text" style={{ width: '100%', textAlign: 'left' }}>
+              - Make yourself a new patchwork cloth
             </p>
           </div>
           <div className="image-container">

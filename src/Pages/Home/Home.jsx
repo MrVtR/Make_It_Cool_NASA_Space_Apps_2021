@@ -1,15 +1,29 @@
 // import { Carroussel, Nav, Footer } from '../../components/exportComponents';
 import { Nav, Footer } from '../../components/exportComponents';
+import Carousel from 'react-elastic-carousel';
 import './Home.scss';
 import Ind from '../../assets/images/individual.svg';
 import Gov from '../../assets/images/gov.svg';
+import pic1 from '../../assets/images/Wellcome.svg';
+import pic2 from '../../assets/images/Global.svg';
+import pic3 from '../../assets/images/Study.svg';
+import pic4 from '../../assets/test/30.png';
 function Home() {
+  const items = [
+    { id: 1, source: <img src={pic1} alt="pic1" height="700px" /> },
+    { id: 2, source: <img src={pic2} alt="pic2" height="700px" /> },
+    { id: 3, source: <img src={pic3} alt="pic3" height="700px" /> },
+    { id: 4, source: <img src={pic4} alt="pic4" height="700px" /> },
+  ];
   return (
     <div className="home">
       <Nav />
-      {/* <Carroussel title="Trending Trips" data={dataTop} /> */}
-      <div className="carroussel" style={{ height: '950px' }}>
-        Teste
+      <div className="carroussel">
+        <Carousel>
+          {items.map((item) => (
+            <div key={item.id}>{item.source}</div>
+          ))}
+        </Carousel>
       </div>
       <div className="container">
         <div className="home-container">

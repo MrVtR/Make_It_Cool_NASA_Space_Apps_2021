@@ -46,76 +46,59 @@ function AboutUs() {
       <div className="container">
         <div className="home-container">
           <div className="text-container">
-            <h1 className="title">Current Global Warming Situation</h1>
-            <h2 className="subtitle">Teste</h2>
+            <h1 className="title">Our History</h1>
+            <h2 className="subtitle">How do we get started?</h2>
             <p className="text">
-              Global warming is the process of changing the global average
-              temperature of the atmosphere and oceans where the accumulation of
-              high concentrations of greenhouse gases in the atmosphere blocks
-              the heat emitted by the Sun and traps it on the Earth's surface,
-              increasing the Earth's average temperature.
+              The team was formed with the intention of participating in NASA
+              Space Apps 2021. A multidisciplinary group of young people from
+              different areas, graduations and states came together with a
+              common goal: fight climate change and make a difference!
             </p>
           </div>
           <div className="image"></div>
         </div>
         <p className="final-text">
-          Among its main causes are the emission of greenhouse gases such as CO2
-          and methane, deforestation, forest fires and use of fossil fuels. The
-          planet's average temperature has risen 1.1 degrees since the second
-          half of the 19th century and in the best-case scenario, it is expected
-          to reach 1.5 degrees of warming over the next two decades. Things are
-          heating up and we are the main responsible for this. But we can also
-          be the solution to this problem.
+          Together, earth science and computer science students seek to develop
+          solutions to reduce global warming.
         </p>
       </div>
       <div className="container">
         <div className="home-container">
           <div className="image"></div>
           <div className="text-container">
-            <h1 className="title">Current Global Warming Situation</h1>
-            <h2 className="subtitle">Teste</h2>
+            <h1 className="title">Our Projects</h1>
+            <h2 className="subtitle">How can we change the world?</h2>
             <p className="text">
-              Global warming is the process of changing the global average
-              temperature of the atmosphere and oceans where the accumulation of
-              high concentrations of greenhouse gases in the atmosphere blocks
-              the heat emitted by the Sun and traps it on the Earth's surface,
-              increasing the Earth's average temperature.
+              Intuitive heat-related hazard prediction map; Individual and
+              governmental guidance for mitigating the impacts of global
+              warming;
             </p>
           </div>
         </div>
         <p className="final-text">
-          Among its main causes are the emission of greenhouse gases such as CO2
-          and methane, deforestation, forest fires and use of fossil fuels. The
-          planet's average temperature has risen 1.1 degrees since the second
-          half of the 19th century and in the best-case scenario, it is expected
-          to reach 1.5 degrees of warming over the next two decades. Things are
-          heating up and we are the main responsible for this. But we can also
-          be the solution to this problem.
+          Interactive and fun game to create an awareness of how each action
+          influences global warming; Community where people can share their
+          actions and see what other people are doing to reduce global warming.
         </p>
       </div>
       <div className="container">
         <div className="home-container">
           <div className="text-container">
-            <h1 className="title">Current Global Warming Situation</h1>
-            <h2 className="subtitle">Teste</h2>
+            <h1 className="title">Our Goals</h1>
+            <h2 className="subtitle">How do we get started?</h2>
             <p className="text">
-              Global warming is the process of changing the global average
-              temperature of the atmosphere and oceans where the accumulation of
-              high concentrations of greenhouse gases in the atmosphere blocks
-              the heat emitted by the Sun and traps it on the Earth's surface,
-              increasing the Earth's average temperature.
+              Using historical and real-time data about environmental and human
+              factors in order to make predictions and heat stress risk
+              warnings;
             </p>
           </div>
           <div className="image"></div>
         </div>
         <p className="final-text">
-          Among its main causes are the emission of greenhouse gases such as CO2
-          and methane, deforestation, forest fires and use of fossil fuels. The
-          planet's average temperature has risen 1.1 degrees since the second
-          half of the 19th century and in the best-case scenario, it is expected
-          to reach 1.5 degrees of warming over the next two decades. Things are
-          heating up and we are the main responsible for this. But we can also
-          be the solution to this problem.
+          Accessibly raise awareness of the risks and impacts of global warming,
+          as well as actions that can be taken individually or governmentally to
+          combat climate change, informing people how we can make a difference
+          together.
         </p>
       </div>
 
