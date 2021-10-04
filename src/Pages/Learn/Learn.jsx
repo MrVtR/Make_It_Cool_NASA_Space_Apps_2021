@@ -4,6 +4,11 @@ import Transportation from '../../assets/images/Transportation 1.svg';
 import Consuption from '../../assets/images/Consuption 1.svg';
 import Water from '../../assets/images/Water 1.svg';
 import Trash from '../../assets/images/Trash 1.svg';
+import govern from '../../assets/images/govern 1.svg';
+import air from '../../assets/images/General/LEARN/AIR POLUITION.jpg';
+import crop from '../../assets/images/General/LEARN/CROP DAMAGE.jpg';
+import ocean1 from '../../assets/images/General/LEARN/OUR OCEANS.jpg';
+import ocean2 from '../../assets/images/General/LEARN/OUR OCEANS 2.jpg';
 function Learn() {
   return (
     <>
@@ -161,11 +166,56 @@ function Learn() {
             </p>
           </div>
         </div>
-        <p className="title">Governmental Actions</p>
+        <p className="title">State & national mitigation measures</p>
         <p className="subtitle">
           Even if you are already doing your part, what can your government
           <br /> do to fight global warming?
         </p>
+        <div className="text-image-container">
+          <div className="text-inside-image">
+            <img src={govern} alt="Snow" id="first" />
+            <div className="centered">Mitigation Measures Policies</div>
+          </div>
+          <div className="text">
+            <p>
+              Cities must adopt measures to mitigate and adapt to climate
+              change. In urban spaces, actions that can be taken are strategies
+              to reduce the heat island effect, improve air quality, increase
+              resource efficiency in the built environment and energy systems,
+              and enhance carbon storage related to land use and urban forestry
+              are likely to contribute to greenhouse gas emissions reduction
+              while improving a city’s resilience.
+            </p>
+            <p>
+              The different ways to develop solutions for climate change must be
+              in accordance with the contexts, technologies and human resources
+              of cities and citizens.
+            </p>
+            <p>
+              The cities, urban planners and decision-makers can think and apply
+              strategies, such as:
+            </p>
+            <p>
+              - Urban and land-use planning and innovative urban design, like
+              the modifying form and layout of buildings and urban districts to
+              improve the air circulation can provide cooling and ventilation
+              that reduce energy use and allow citizens to cope with higher
+              temperatures and more intense runof. Simpler than that we have the
+              construction of bike paths!
+            </p>
+            <p>
+              - Managing and utilizing solid waste, like improving waste
+              treatment systems to reduce greenhouse gas emissions.
+            </p>
+            <p>
+              - Reduction of inequalities. Poorer people and ethnic and racial
+              minorities tend to live in more hazard-prone, vulnerable and
+              crowded parts of cities. These circumstances increase their
+              susceptibility to the impacts of climate change and reduce their
+              capacity to adapt and withstand extreme events.
+            </p>
+          </div>
+        </div>
       </div>
       <div className="gradient-container">
         <p className="title">Other impacts</p>
@@ -175,7 +225,10 @@ function Learn() {
       </div>
       <div className="container">
         <div className="home-container">
-          <div className="text-container">
+          <div
+            className="text-container"
+            style={{ alignItems: 'flex-end', justifyContent: 'flex-end' }}
+          >
             <h1 className="title">Our Oceans</h1>
             <p className="text">
               With the increase in the concentration of carbon dioxide in the
@@ -185,12 +238,69 @@ function Learn() {
               salinity. Such consequences, concomitantly with others, alter the
               biological and life dynamics existing in the ecosystem.
             </p>
+            <p className="text">
+              For example, it can lead to the coral bleaching and the extinction
+              of marine animals.
+            </p>
           </div>
-          <div className="image"></div>
+          <div className="ocean">
+            <img src={ocean1} alt="" />
+            <img src={ocean2} alt="" />
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="home-container">
+          <img src={air} alt="" />
+          <div className="text-container">
+            <h1 className="title">Air Pollution</h1>
+            <p className="text">
+              Nine out of 10 people around the world breathe highly polluted air
+              – due to pollution from factories, households and cars. The World
+              Health Organization found that 90% of the world’s population lives
+              in areas where the level of pollutants exceeds recommended limits,
+              especially in cities [1].
+            </p>
+          </div>
         </div>
         <p className="final-text">
-          For example, it can lead to the coral bleaching and the extinction of
-          marine animals.
+          Climate change and air pollution management have consequences for each
+          other. There are complex interactions in the atmosphere. For example,
+          the atmospheric warming associated with climate change has the
+          potential to increase ground-level ozone in many regions.
+        </p>
+        <p className="final-text">
+          There are many air pollutants, these include greenhouse gases such as
+          carbon dioxide, methane, nitrous oxide and others, but not only! Black
+          carbon is a big problem. It is formed through the incomplete
+          combustion of fossil fuels, biofuel, and biomass, and is one of the
+          main types of particles in both anthropogenic and naturally occurring
+          soot.
+        </p>
+      </div>
+      <div className="container">
+        <div className="home-container">
+          <div
+            className="text-container"
+            style={{ alignItems: 'flex-end', justifyContent: 'flex-end' }}
+          >
+            <h1 className="title">Crop Damage</h1>
+            <p className="text">
+              Higher levels of carbon dioxide in the atmosphere can act as a
+              fertilizer and increase plant growth, with the amount of benefit a
+              culture receives depending on its type. The greater presence of
+              carbon dioxide makes the plant more efficient in gas absorption,
+              less water loss, better plant growth and higher crop yields.
+            </p>
+          </div>
+          <img src={crop} alt="" />
+        </div>
+        <p className="final-text">
+          However, even with higher yields, the content of proteins and
+          micronutrients is lower. Regarding temperature, many crops start
+          feeling stressed at temperatures above about 90 to 95 °F (32 to 35°
+          C), although there will be variations due to crop type and water
+          availability.
         </p>
       </div>
       <Footer />

@@ -11,6 +11,8 @@ import Vote from '../../assets/images/Vote.svg';
 import Food from '../../assets/images/Food.svg';
 import FoodGreen from '../../assets/images/foodGreen.png';
 import Iframe from 'react-iframe';
+import GameGoal from '../../assets/images/General/GAME/GAME GOAL.PNG';
+import Play from '../../assets/images/General/GAME/HOW TO PLAY.PNG';
 function Game() {
   return (
     <>
@@ -50,7 +52,7 @@ function Game() {
                   alt="pipe key"
                   style={{ marginRight: '15px' }}
                 />
-                <p>Select</p>
+                <p>Jump</p>
               </div>
               <div className="command">
                 <img src={Arrow} alt="Arrow" />
@@ -59,15 +61,15 @@ function Game() {
                   alt="pipe key"
                   style={{ marginRight: '15px' }}
                 />
-                <p>Jump</p>
+                <p>Select</p>
               </div>
             </div>
-            <div className="image"></div>
+            <img src={Play} alt="" height="300px" />
           </div>
         </div>
         <div className="container">
           <div className="home-container">
-            <div className="image"></div>
+            <img src={GameGoal} alt="" height="300px" />
             <div className="text-container">
               <h1 className="title">Game Goal</h1>
               <p className="text">

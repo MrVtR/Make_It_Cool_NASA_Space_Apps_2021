@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import './LoadMap.scss';
+import * as MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoibXJ2dHIwODAzIiwiYSI6ImNrdTk4YTIzNzA0ZWQyb256MXEzM2t0eXcifQ.lBqGrvTSd93FfA6_wsA1Og';
@@ -38,15 +39,19 @@ export default function App() {
         unit: 'imperial',
       });
       map.current.addControl(scale);
+      map.current.addControl(
+        new MapboxGeocoder({
+          accessToken: mapboxgl.accessToken,
+          mapboxgl: mapboxgl,
+        }),
+      );
       map.current.addControl(new mapboxgl.NavigationControl());
       map.current.addControl(
         new mapboxgl.GeolocateControl({
           positionOptions: {
             enableHighAccuracy: true,
           },
-          // When active the map will receive updates to the device's location as it changes.
           trackUserLocation: true,
-          // Draw an arrow next to the location dot to indicate which direction the device is heading.
           showUserHeading: true,
         }),
       );

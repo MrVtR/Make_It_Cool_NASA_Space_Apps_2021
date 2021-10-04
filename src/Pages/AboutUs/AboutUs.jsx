@@ -6,6 +6,9 @@ import pixelArt3 from '../../assets/images/pelizarinho 1.svg';
 import pixelArt4 from '../../assets/images/show_3 1.svg';
 import pixelArt5 from '../../assets/images/show 1.svg';
 import pixelArt6 from '../../assets/images/show_4 1.svg';
+import ourGoals from '../../assets/images/General/ABOUT US/OUR-GOALS.jpg';
+import ourHistory from '../../assets/images/General/ABOUT US/OUR HISTORY.jpg';
+import ourProjects from '../../assets/images/General/ABOUT US/OUR PROJECTS.jpg';
 function AboutUs() {
   return (
     <>
@@ -55,7 +58,7 @@ function AboutUs() {
               common goal: fight climate change and make a difference!
             </p>
           </div>
-          <div className="image"></div>
+          <img src={ourHistory} alt="" />
         </div>
         <p className="final-text">
           Together, earth science and computer science students seek to develop
@@ -64,7 +67,7 @@ function AboutUs() {
       </div>
       <div className="container">
         <div className="about-container">
-          <div className="image"></div>
+          <img src={ourProjects} alt="" height="350px" />
           <div
             className="text-container"
             style={{ alignItems: 'flex-start', justifyContent: 'flex-start' }}
@@ -95,7 +98,7 @@ function AboutUs() {
               warnings;
             </p>
           </div>
-          <div className="image"></div>
+          <img src={ourGoals} alt="" />
         </div>
         <p className="final-text">
           Accessibly raise awareness of the risks and impacts of global warming,

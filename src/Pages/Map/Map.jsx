@@ -1,5 +1,7 @@
 import './Map.scss';
 import { Nav, Footer, LoadMap } from '../../components/exportComponents';
+import forest from '../../assets/images/General/MAP/FOREST FIRES.jpg';
+import thermal from '../../assets/images/General/MAP/THERMAL STRESS.jpg';
 function Map() {
   return (
     <>
@@ -17,7 +19,7 @@ function Map() {
       </div>
       <div className="container">
         <div className="home-container">
-          <div className="image"></div>
+          <img src={forest} alt="" />
           <div className="text-container">
             <h1 className="title">Forest Fires</h1>
             <p className="text">
@@ -42,7 +44,7 @@ function Map() {
       </div>
       <div className="container">
         <div className="home-container">
-          <div className="image"></div>
+          <img src={thermal} alt="" />
           <div className="text-container">
             <h1 className="title">Thermal Stress</h1>
             <p className="text">

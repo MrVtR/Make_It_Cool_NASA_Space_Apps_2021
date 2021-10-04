@@ -33,14 +33,14 @@
   .title {
     font-family: Roboto;
     font-weight: 700;
-    font-size: 72px;
-    margin: 82px 0 0 0;
+    font-size: 40px;
+    margin: 32px 0 0 0;
     text-align: center;
   }
   .subtitle {
     font-family: Roboto;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 28px;
     margin: 17px 0 52px 0;
     text-align: center;
   }
@@ -94,6 +94,13 @@
   align-items: flex-start;
   justify-content: center;
   margin-top: 134px;
+  .ocean {
+    display: flex;
+    flex-direction: column;
+    img {
+      margin-bottom: 10px;
+    }
+  }
   .image {
     width: 615px;
     height: 588px;
@@ -109,17 +116,17 @@
     margin-right: 14px;
     .title {
       font-family: Roboto;
-      font-size: 72px;
       font-weight: 700;
-      line-height: 85px;
-      margin: 0;
+      font-size: 40px;
+      margin: 32px 0 0 0;
+      text-align: center;
     }
     .subtitle {
       font-family: Roboto;
-      font-size: 48px;
       font-weight: 300;
-      line-height: 85px;
-      margin: 0;
+      font-size: 28px;
+      margin: 17px 0 52px 0;
+      text-align: center;
     }
   }
 }
@@ -135,4 +142,19 @@
 .final-text {
   width: 1245px;
   margin-bottom: 99px;
+}
+
+.title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 32px 0 0 0;
+  text-align: center;
+}
+.subtitle {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 17px 0 52px 0;
+  text-align: center;
 }

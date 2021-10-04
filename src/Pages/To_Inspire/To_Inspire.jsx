@@ -1,10 +1,25 @@
 import './To_Inspire.scss';
 import { Nav, Footer } from '../../components/exportComponents';
+import Bike from '../../assets/images/General/TO INSPIRE/BIKE RIDING.jpg';
+import Organic from '../../assets/images/General/TO INSPIRE/ORGANIC RECIPE.jpg';
+import PatchWork from '../../assets/images/General/TO INSPIRE/PATCHWORK CLOTH.jpg';
+import Recycling from '../../assets/images/General/TO INSPIRE/RECYCLING.jpg';
+import ex1 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 1.jpg';
+import ex2 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 2.jpg';
+import ex3 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 3.jpg';
+import ex4 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 4.jpg';
+import ex5 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 5.jpg';
+import ex6 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 6.jpg';
+import ex7 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 7.jpg';
+import ex8 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 8.jpg';
+import ex9 from '../../assets/images/General/TO INSPIRE/exemplos/EXEMPLO 9.jpg';
 function To_Inspire() {
   function posts() {
+    var imgs = [ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9];
     var indents = [];
     for (var i = 0; i < 24; i++) {
-      indents.push(<div key={i} className="posts-image"></div>);
+      var randomItem = imgs[Math.floor(Math.random() * imgs.length)];
+      indents.push(<img src={randomItem} alt="" width="350px"></img>);
     }
     return indents;
   }
@@ -46,10 +61,10 @@ function To_Inspire() {
             </p>
           </div>
           <div className="image-container">
-            <div className="image" style={{ backgroundColor: 'red' }}></div>
-            <div className="image" style={{ backgroundColor: 'blue' }}></div>
-            <div className="image" style={{ backgroundColor: 'green' }}></div>
-            <div className="image" style={{ backgroundColor: 'yellow' }}></div>
+            <img src={Organic} alt="" width="400px" />
+            <img src={Recycling} alt="" width="400px" />
+            <img src={Bike} alt="" width="400px" />
+            <img src={PatchWork} alt="" width="400px" />
           </div>
         </div>
         <p className="final-text" style={{ margin: '20px 0 0 0' }}>

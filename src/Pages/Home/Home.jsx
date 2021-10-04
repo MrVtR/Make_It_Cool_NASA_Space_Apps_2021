@@ -8,6 +8,10 @@ import pic1 from '../../assets/images/Wellcome.svg';
 import pic2 from '../../assets/images/Global.svg';
 import pic3 from '../../assets/images/Study.svg';
 import pic4 from '../../assets/test/30.png';
+import alerts from '../../assets/images/General/HOME/alerts.PNG';
+import global from '../../assets/images/General/HOME/current.jpg';
+import not from '../../assets/images/General/HOME/not.PNG';
+import weDo from '../../assets/images/General/HOME/weDo.jpg';
 function Home() {
   const items = [
     { id: 1, source: <img src={pic1} alt="pic1" height="500px" /> },
@@ -27,7 +31,7 @@ function Home() {
       </div>
       <div className="container">
         <div className="home-container">
-          <div className="image"></div>
+          <img src={global} alt="" height="350px" />
           <div className="text-container">
             <h1 className="title">Current Global Warming Situation</h1>
             <p className="text">
@@ -62,7 +66,7 @@ function Home() {
             take to change the destiny of our planet!
           </p>
         </div>
-        <div className="image"></div>
+        <img src={weDo} alt="" />
       </div>
       <div className="grandient-container" style={{ height: '440px' }}>
         <h1 className="title">How to combat global warming?</h1>
