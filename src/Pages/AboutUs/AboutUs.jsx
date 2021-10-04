@@ -102,6 +102,11 @@ function AboutUs() {
               factors in order to make predictions and heat stress risk
               warnings;
             </p>
+            <p className="text">
+              Provide information in a simple and understandable way, raising
+              awareness around the world and creating a sense of conscious
+              community engaged in changing the world.
+            </p>
           </div>
           <img src={ourGoals} alt="" />
         </div>
