@@ -18,7 +18,7 @@ For the project to be realized, the following dependencies for ReactJS were used
 4. [Axios: 0.21.1](https://github.com/axios/axios)
 6. [react-elastic-carousel](https://www.npmjs.com/package/react-elastic-carousel)
 7. [mapboxgl](https://www.mapbox.com)
-8. [https://github.com/mapbox/mapbox-gl-geocoder](https://github.com/jonathandion/react-tilt)
+8. [mapbox-gl-geocoder](https://github.com/mapbox/mapbox-gl-geocoder)
   
 ## Step by step
 1. The team of 6 people met during 10/02/2021 and 10/03/2021, for 48 hours we collected data from NASA to feed our application
