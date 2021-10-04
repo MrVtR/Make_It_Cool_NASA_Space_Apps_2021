@@ -103,7 +103,8 @@ function Home() {
               message, such as forest fire warnings.
             </p>
           </div>
-          <div className="image"></div>
+          <img src={not} alt="" height="350px" className="mobile" />
+          <img src={alerts} alt="" height="350px" className="mobile" />
         </div>
         <p className="final-text">
           Feel free to check out our world map impact visualization area and

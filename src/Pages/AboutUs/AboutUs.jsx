@@ -75,16 +75,21 @@ function AboutUs() {
             <h1 className="title">Our Projects</h1>
             <h2 className="subtitle">How can we change the world?</h2>
             <p className="text">
-              Intuitive heat-related hazard prediction map; Individual and
-              governmental guidance for mitigating the impacts of global
-              warming;
+              - Intuitive heat-related hazard prediction map;
+            </p>
+            <p className="text">
+              - Individual and governmental guidance for mitigating the impacts
+              of global warming;
             </p>
           </div>
         </div>
         <p className="final-text">
-          Interactive and fun game to create an awareness of how each action
-          influences global warming; Community where people can share their
-          actions and see what other people are doing to reduce global warming.
+          - Interactive and fun game to create an awareness of how each action
+          influences global warming;
+        </p>
+        <p className="final-text">
+          - Community where people can share their actions and see what other
+          people are doing to reduce global warming.
         </p>
       </div>
       <div className="container">
