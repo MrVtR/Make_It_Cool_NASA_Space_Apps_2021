@@ -39,3 +39,4 @@ To run the program you need to install the dependencies used, which are in the p
 
 ## Web application authored in ReactJS
 * Vítor Ribeiro ([MrVtR](https://github.com/MrVtR))
+* João Pedro Cosso ([joaopedrocosso](https://github.com/joaopedrocosso))
