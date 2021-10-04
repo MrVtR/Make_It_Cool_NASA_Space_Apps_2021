@@ -2,10 +2,74 @@ import './Map.scss';
 import { Nav, Footer, LoadMap } from '../../components/exportComponents';
 import forest from '../../assets/images/General/MAP/FOREST FIRES.jpg';
 import thermal from '../../assets/images/General/MAP/THERMAL STRESS.jpg';
+import temp1 from '../../assets/images/temp 1.svg';
+import Rplot from '../../assets/images/Rplot01 1.svg';
+import temp2 from '../../assets/images/temp 2.svg';
+import Rplot2 from '../../assets/images/Rplot01 2.svg';
 function Map() {
   return (
     <>
       <Nav />
+      <div className="gradient-container">
+        <p className="title">Climate Change Predictions</p>
+        <p className="subtitle">What will happen in 2 years?</p>
+        <p className="subsubtitle">
+          *The information will be constantly updated
+        </p>
+      </div>
+      <div className="container">
+        <div className="home-container">
+          <div className="text-container">
+            <h1 className="title">Our Current Research</h1>
+            <p className="text">
+              From programming in the "R" language and using frameworks such as
+              fpp2, ttr and dplyr for NASA data analysis, we were able to
+              predict the temperature growth in the city of São Paulo, Brazil,
+              and of global CO2 for the next two years!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src={temp1} alt="" />
+          <img src={Rplot} alt="" />
+        </div>
+      </div>
+      <div className="container">
+        <div className="home-container">
+          <div>
+            <img src={temp2} alt="" />
+            <img src={Rplot2} alt="" />
+          </div>
+          <div className="text-container">
+            <h1 className="title">Our Current Research</h1>
+            <p className="text">
+              From programming in the "R" language and using frameworks such as
+              fpp2, ttr and dplyr for NASA data analysis, we were able to
+              predict the temperature growth in the city of São Paulo, Brazil,
+              and of global CO2 for the next two years!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="home-container">
+          <div className="text-container">
+            <h1 className="title">Interpretation</h1>
+            <p className="text">
+              According to the forecasts, we extract the following
+              interpretation: The global CO2 levels tend to continue growing, as
+              well as the temperature levels in the city of São Paulo, two data
+              that are directly related. This occurs because of the unbridled
+              dissemination of industrialization, which if not rethought will
+              increase the dimension of the impacts on the environment,
+              biodiversity, and human life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h1 className="title" style={{ marginBottom: '50px', fontSize: '46px' }}>
+        Let's build a better tomorrow!
+      </h1>
       <div className="gradient-container">
         <p className="title">Global Warming View</p>
         <p className="subtitle">Visualize the impacts on your city</p>
