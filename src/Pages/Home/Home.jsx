@@ -12,12 +12,33 @@ import alerts from '../../assets/images/General/HOME/alerts.PNG';
 import global from '../../assets/images/General/HOME/current.jpg';
 import not from '../../assets/images/General/HOME/not.PNG';
 import weDo from '../../assets/images/General/HOME/weDo.jpg';
+import pt from '../../assets/images/Parte de trás.svg';
+import gif from '../../assets/images/hi2.gif';
 function Home() {
   const items = [
-    { id: 1, source: <img src={pic1} alt="pic1" height="500px" /> },
+    {
+      id: 1,
+      source: <img src={pic1} alt="pic1" height="500px" />,
+    },
     { id: 2, source: <img src={pic2} alt="pic2" height="500px" /> },
     { id: 3, source: <img src={pic3} alt="pic3" height="500px" /> },
-    { id: 4, source: <img src={pic4} alt="pic4" height="500px" /> },
+    {
+      id: 4,
+      source: (
+        <div className="gif">
+          <img src={pt} alt="" className="food-img" />
+          <img src={gif} alt="" className="gif-img" />
+          <div className="text-gif">
+            <p className="title">Make it Cool Game</p>
+            <p className="subtitle">
+              Play our game and learn about global
+              <br />
+              warming in a fun and interactive way!
+            </p>
+          </div>
+        </div>
+      ),
+    },
   ];
   return (
     <div className="home">
