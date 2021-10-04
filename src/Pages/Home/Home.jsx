@@ -7,7 +7,6 @@ import Gov from '../../assets/images/gov.svg';
 import pic1 from '../../assets/images/Wellcome.svg';
 import pic2 from '../../assets/images/Global.svg';
 import pic3 from '../../assets/images/Study.svg';
-import pic4 from '../../assets/test/30.png';
 import alerts from '../../assets/images/General/HOME/alerts.PNG';
 import global from '../../assets/images/General/HOME/current.jpg';
 import not from '../../assets/images/General/HOME/not.PNG';
