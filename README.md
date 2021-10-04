@@ -1,17 +1,17 @@
 # Make_It_Cool_NASA_Space_Apps_2021
 
-## Conceito do projeto
-Esse projeto consiste em realizar o desafio da Maratona NASA Space Apps 2021, o tema da nossa equipe é [Waring: Things Are Heating Up](https://2021.spaceappschallenge.org/challenges/statements/warning-things-are-heating-up/teams/make-it-cool/project), usamos ReactJS para realizar o projeto, juntamente com o auxilio de bibliotecas que serão listadas mais abaixo <br/>
-O site criado conta com Cinco abas principais planejadas:
-1. **Home** - Página inicial do projeto, onde é apresentado quais são as nossas preocupações com relação aos desastres naturais que ocorrem ao redor do mundo, juntamente com as soluções que propusemos, com destaque para o Modelo Preditivo sobre Aumentos de Temperaturas, o jogo desenvolvido por nós e uma amostra de dados históricos via Mapa
-2. **About Us** - Página feita para mostrar como a equipe se conheceu, qual os nossos objetivos como time e quais projetos fizemos dentro da solução do desafio da NASA
-3. **Map** - Página com a função de exibir os resultados das soluções Preditivas nossas, que mostram predicções futuras para a cidade de São Paulo - Brazil com relação a aumentos de temperatura, além disso, também foi desenvolvido uma amostra de dados históricos(1990-2021) da base NASA EONET, contribuindo para mostrar ao usuário quais os impactos que sua região teve durante o passar dos tempos, dando destaque para a amostra dos resultados, utilizando das cores Verde, Amarelo e Vermelho para amostrar os resultados em formato de Ondas de Calor, por fim, informamos o usuário sobre os principais problemas que trabalhamos dentro do desafio, junto com suas origens e consequências, como o alto índice de queimadas e estresse por calor
-4. **Learn** - Nesta página apresentamos Mitigações que o usuário pode seguir de forma individual e também informamos qual a responsabilidade que o governo deve ter para que contribua para reduzir os índices de desastres. Além disso, também informamos quais as origens e consequências de outros desastres naturais que não foram tratados explicitamente dentro de nossa análise de dados, como os Oceanos, Poluição do Ar e Danos em agriculturas
-5. **Game** - Para esta página que fizemos, o intuito dela é apresentar o jogo desenvolvido pela equipe dentro da Engine GDevelop5, este jogo tem o objtivo de conscientizar as pessoas sobre temas como: Poluição, Voto Consciente, Desperdício de Alimentos, Mundo da Moda e Certificados Verdes, o usuário pode jogar de forma simples e rápida dentro do próprio navegador. Além disso, explicamos de forma aprofundada os temas citados acima em seções mais abaixo da execução do jogo
-6. **To Inspire** - Esta é uma seção para que o usuário sinta-se acolhido por nosso desafio e seja incentivado a colaborar também do jeito que conseguir, pois toda ajuda importa quando tratamos do nosso Planeta, dessa forma, apresentamos algumas sugestões do cotidiano para que o leitor possa colocar em prática, além de poder mencionar nossa equipe em situações ecológicas futuramente dentro de suas redes sociais
+## Project concept
+This project consists of performing the NASA Space Apps Marathon 2021 challenge, our team's theme is [Waring: Things Are Heating Up](https://2021.spaceappschallenge.org/challenges/statements/warning-things-are-heating-up/teams/make-it-cool/project), we use ReactJS to perform the project, along with the help of libraries that will be listed below <br/>
+The site created has Six main tabs planned:
+1. **Home** - Page designed to show how the team met, what our goals are as a team, and what projects we did within the solution to the NAS challenge. The project's homepage, where we present our concerns regarding the natural disasters that occur around the world, along with the solutions we proposed, highlighting the Predictive Model on Temperature Rises, the game we developed, and a sample of historical data via Map
+2. **About Us** - Page designed to show how the team met, what our goals were as a team, and what projects we did within the solution to the NASA challenge
+3. **Map** - Page with the function of displaying the results of our Predictive solutions, which show future predictions for the city of São Paulo - Brazil regarding temperature increases, in addition, we also developed a sample of historical data (1990-2021) from the NASA EONET base, helping to show the user what impacts his region had over time, highlighting the sample results, using the colors Green, Yellow and Red to sample the results in the format of Heat Waves, finally, we inform the user about the main problems we work within the challenge, along with their origins and consequences, such as the high rate of fires and heat stress
+4. **Learn** - On this page we present Mitigations that the user can follow on an individual basis, and we also inform what responsibility the government should have to contribute to reducing disaster rates. In addition, we also inform you about the origins and consequences of other natural disasters that have not been explicitly addressed within our data analysis, such as Oceans, Air Pollution and Agricultural Damage.
+5. **Game** - For this page we made, the intention of it is to present the game developed by the team within the GDevelop5 Engine, this game has the objective of making people aware of themes such as: Pollution, Conscious Voting, Food Waste, Fashion World and Green Certificates, the user can play in a simple and fast way within the browser itself. In addition, we explain the above-mentioned topics in depth in sections further down in the game run
+6. **To Inspire** - This is a section for the user to feel welcomed by our challenge and be encouraged to collaborate in any way they can, because all help matters when it comes to our Planet, so we present some suggestions for the reader to put into practice, and to mention our team in ecological situations in the future within their social networks
 
-## Pré-requisitos e recursos utilizados
-Para o projeto ser realizado, foi utilizado as seguintes dependências para ReactJS:
+## Prerequisites and resources used
+For the project to be realized, the following dependencies for ReactJS were used:
 1. [ReactJS: 0.17.1](https://github.com/facebook/react/releases)
 2. [React-router-dom: 5.2.0](https://reactrouter.com/web/guides/quick-start)
 3. [Node Sass: 4.14.1](https://www.npmjs.com/package/node-sass/v/4.14.1)
@@ -20,22 +20,22 @@ Para o projeto ser realizado, foi utilizado as seguintes dependências para Reac
 7. [mapboxgl](https://www.mapbox.com)
 8. [https://github.com/mapbox/mapbox-gl-geocoder](https://github.com/jonathandion/react-tilt)
   
-## Passo a passo
-1. A equipe composta de 6 pessoas se reuniu durante os dias 02/10/2021 e 03/10/2021, durante 48 horas coletamos dados da NASA para alimentar nossa aplicação
-2. Criei o projeto e mapeei as rotas através do React-router-dom, além de fazer a configuração dos requests da API com o Axios
-3. Criei os componentes comuns que poderiam ser utilizados no projeto todo
-4. Fiz pesquisas sobre as bibliotecas que utilizam de geolocalização para que fossem incluídas dentro do nosso site
-5. Durante o meio da competição, finalizamos um jogo para conscientizar as pessoas de suas ações, incluindo ele dentro da aplicação web
-6. Por fim, fizemos análises preditivas sobre o aumento de temperaturas dentro do nosso país, para que possa ser possível alertar a população e sugerir práticas que diminuam danos em seus sistemas fisiológicos
+## Step by step
+1. The team of 6 people met during 10/02/2021 and 10/03/2021, for 48 hours we collected data from NASA to feed our application
+2. I created the project and mapped the routes through React-router-dom, and configured the API requests with Axios
+3. I created the common components that could be used in the whole project
+4. I researched the libraries that use geolocation to be included inside our site
+5. During the middle of the competition, we finalized a game to make people aware of their actions by including it within the web application
+6. Finally, we did predictive analysis on the increase of temperatures within our country, so that it may be possible to alert the population and suggest practices that decrease damage to their physiological systems
 
-## Instalação
-Para instalar as dependências do projeto localmente, utilize a instrução abaixo:
-1. Após baixar o projeto, digite no terminal ```yarn install``` e espere pela instalação das dependências, após isso, siga para a etapa de [Execução](#Execução)
+## Installation
+To install the project dependencies locally, use the instruction below:
+1. After downloading the project, type ``yarn install`` in terminal and wait for the dependencies to install, after that, go to the [Execution](#Execution) step
 
-## Execução
-Para executar o programa é necessário instalar as dependências utilizadas, que estão no package.json e após isso executar o projeto,para estar operações, utilize os comandos abaixo:
-1. Digite no terminal ```yarn start``` para rodar o projeto em modo desenvolvimento.
+## Execution
+To run the program you need to install the dependencies used, which are in the package.json and after that run the project,to be operations, use the commands below:
+1. Type ``yarn start`` in the terminal to run the project in development mode.
 
 
-## Autor da aplicação Web em ReactJS
+## Web application authored in ReactJS
 * Vítor Ribeiro ([MrVtR](https://github.com/MrVtR))
