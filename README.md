@@ -1,5 +1,5 @@
 # Make_It_Cool_NASA_Space_Apps_2021
-
+![Imagem](https://github.com/MrVtR/Make_It_Cool_NASA_Space_Apps_2021/blob/main/src/assets/images/Logo.svg)
 ## Project concept
 This project consists of performing the NASA Space Apps Marathon 2021 challenge, our team's theme is [Waring: Things Are Heating Up](https://2021.spaceappschallenge.org/challenges/statements/warning-things-are-heating-up/teams/make-it-cool/project), we use ReactJS to perform the project, along with the help of libraries that will be listed below <br/>
 The site created has Six main tabs planned:
